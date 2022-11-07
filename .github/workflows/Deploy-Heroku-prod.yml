@@ -38,7 +38,7 @@ jobs:
           # The email address associated with your Heroku account.
           # If you don't want to use repository secrets (which is recommended) you can do:
           # email: my.email@example.com
-          email: ${{ secrets.HEROKU_EMAIL }}
+          email:  ${{ secrets.HEROKU_EMAIL }}
           
           # Heroku API key associated with provided user's email.
           # Api Key is available under your Heroku account settings.
@@ -58,7 +58,7 @@ jobs:
 
           # (Optional, default: "")
           # Additional options of docker build command.
-          docker_options:  "--no-cache"
+          docker_options: "--no-cache"
           
           # (Optional, default: "web")
           # Select the process type for which you want the docker container to be uploaded.
