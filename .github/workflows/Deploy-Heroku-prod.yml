@@ -14,6 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DB_URL: ${{secrets.DB_URL}}
+<<<<<<< HEAD
+      SECRET_KEY: ${{secrets.SECRET_KEY}}
+=======
+>>>>>>> 8f872c0cb55f314fd34b508c6741b0f9ae340994
       PORT: 8080
       # change to the project directory you're deploying
       WORKING_DIRECTORY: flask_sample
@@ -38,7 +42,11 @@ jobs:
           # The email address associated with your Heroku account.
           # If you don't want to use repository secrets (which is recommended) you can do:
           # email: my.email@example.com
+<<<<<<< HEAD
+          email: ${{ secrets.HEROKU_EMAIL }}
+=======
           email:  ${{ secrets.HEROKU_EMAIL }}
+>>>>>>> 8f872c0cb55f314fd34b508c6741b0f9ae340994
           
           # Heroku API key associated with provided user's email.
           # Api Key is available under your Heroku account settings.
