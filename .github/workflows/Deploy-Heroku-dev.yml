@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - dev
-      - DeploymentSetup
+      - MiniProject-2
 
 # Your workflows jobs.
 jobs:
@@ -15,11 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DB_URL: ${{secrets.DB_URL}}
+      SECRET_KEY: ${{secrets.SECRET_KEY}}
       PORT: 8080
       # change to the project directory you're deploying
-      WORKING_DIRECTORY: flask_sample
+      WORKING_DIRECTORY: BusinessManagement
     defaults:
-      run: 
+      run:
           working-directory: ${{env.WORKING_DIRECTORY}}
     
     steps:
@@ -69,4 +70,8 @@ jobs:
           
    
           
+<<<<<<< HEAD
 ### ⬆ IMPORTANT PART ⬆ ###
+=======
+### ⬆ IMPORTANT PART ⬆ ###
+>>>>>>> 8f872c0cb55f314fd34b508c6741b0f9ae340994
