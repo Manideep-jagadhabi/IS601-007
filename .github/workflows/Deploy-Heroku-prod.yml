@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - prod
-      -Milestone1
 
 # Your workflows jobs.
 jobs:
@@ -18,7 +17,7 @@ jobs:
       SECRET_KEY: ${{secrets.SECRET_KEY}}
       PORT: 8080
       # change to the project directory you're deploying
-      WORKING_DIRECTORY: prod
+      WORKING_DIRECTORY: Shop
     defaults:
       run:
           working-directory: ${{env.WORKING_DIRECTORY}}
